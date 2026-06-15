@@ -1,66 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Auto-Sorting Leaderboard</title>
-<style>
-  body { font-family: sans-serif; margin: 20px; }
-  .input-group { margin-bottom: 20px; }
-  ol { padding-left: 20px; }
-  li { font-size: 1.2em; margin-bottom: 8px; }
-</style>
-</head>
-<body>
+let items = JSON.parse(localStorage.getItem('rankedItems')) || [];
 
-  <div class="input-group">
-    <input type="text" id="itemInput" placeholder="Thing name...">
-    <input type="number" id="pointInput" placeholder="Points...">
-    <button onclick="addItem()">Add Item</button>
-  </div>
+function addItem() {
+    const input = document.getElementById('itemName');
+    const name = input.value.trim();
+    
+    if (name === '') return;
 
-  <ol id="leaderboard">
-    <!-- Items will be injected here -->
-  </ol>
+    const newItem = {
+        id: Date.now(),
+        name: name,
+        points: 0
+    };
 
-  <script>
-    let listData = [
-      { name: "Alpha", points: 150 },
-      { name: "Beta", points: 999 },
-      { name: "Gamma", points: 450 }
-    ];
+    items.push(newItem);
+    input.value = '';
+    
+    saveAndRender();
+}
 
-    function addItem() {
-      const nameInput = document.getElementById('itemInput');
-      const pointInput = document.getElementById('pointInput');
-      
-      const name = nameInput.value.trim();
-      const points = parseInt(pointInput.value);
-
-      if (name && !isNaN(points)) {
-        listData.push({ name: name, points: points });
-        renderList();
-        
-        nameInput.value = '';
-        pointInput.value = '';
-      }
+function updatePoints(id, amount) {
+    const item = items.find(i => i.id === id);
+    if (item) {
+        item.points += amount;
+        saveAndRender();
     }
+}
 
-    function renderList() {
-      listData.sort((a, b) => b.points - a.points);
+function saveAndRender() {
+    items.sort((a, b) => b.points - a.points);
+    
+    localStorage.setItem('rankedItems', JSON.stringify(items));
+    
+    const listElement = document.getElementById('leaderboard');
+    listElement.innerHTML = '';
 
-      const listElement = document.getElementById('leaderboard');
-      listElement.innerHTML = '';
-
-      listData.forEach(item => {
+    items.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = `${item.name} - ${item.points} Points`;
+        li.innerHTML = `
+            <span><strong>${item.name}</strong> (${item.points} pts)</span>
+            <div class="controls">
+                <button onclick="updatePoints(${item.id}, 1)">+1</button>
+                <button onclick="updatePoints(${item.id}, -1)">-1</button>
+            </div>
+        `;
         listElement.appendChild(li);
-      });
-    }
+    });
+}
 
-    renderList();
-  </script>
-
-</body>
-</html>
+saveAndRender();
