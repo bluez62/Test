@@ -1,50 +1,30 @@
-let items = JSON.parse(localStorage.getItem('rankedItems')) || [];
+let items = [
+    { name: "Item Alpha", points: 150 },
+    { name: "Item Beta", points: 340 },
+    { name: "Item Gamma", points: 20 },
+    { name: "Item Delta", points: 85 },
+    { name: "Item Epsilon", points: 120 }
+];
 
-function addItem() {
-    const input = document.getElementById('itemName');
-    const name = input.value.trim();
-    
-    if (name === '') return;
-
-    const newItem = {
-        id: Date.now(),
-        name: name,
-        points: 0
-    };
-
-    items.push(newItem);
-    input.value = '';
-    
-    saveAndRender();
-}
-
-function updatePoints(id, amount) {
-    const item = items.find(i => i.id === id);
-    if (item) {
-        item.points += amount;
-        saveAndRender();
-    }
-}
-
-function saveAndRender() {
+function renderLeaderboard() {
     items.sort((a, b) => b.points - a.points);
-    
-    localStorage.setItem('rankedItems', JSON.stringify(items));
     
     const listElement = document.getElementById('leaderboard');
     listElement.innerHTML = '';
 
-    items.forEach(item => {
+    items.forEach((item, index) => {
+        const rank = index + 1;
+        
         const li = document.createElement('li');
         li.innerHTML = `
-            <span><strong>${item.name}</strong> (${item.points} pts)</span>
-            <div class="controls">
-                <button onclick="updatePoints(${item.id}, 1)">+1</button>
-                <button onclick="updatePoints(${item.id}, -1)">-1</button>
+            <div>
+                <span class="rank-number">#${rank}</span>
+                <strong>${item.name}</strong>
             </div>
+            <span>${item.points} pts</span>
         `;
         listElement.appendChild(li);
     });
 }
 
-saveAndRender();
+renderLeaderboard();
