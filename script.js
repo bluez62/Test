@@ -1,9 +1,9 @@
 let items = [
-    { name: "Item Alpha", points: 150 },
-    { name: "Item Beta", points: 340 },
-    { name: "Item Gamma", points: 20 },
-    { name: "Item Delta", points: 85 },
-    { name: "Item Epsilon", points: 120 }
+    { name: "Item A", points: 150 },
+    { name: "Item B", points: 340 },
+    { name: "Item C", points: 20 },
+    { name: "Item D", points: 85 },
+    { name: "Item E", points: 120 }
 ];
 
 function renderLeaderboard() {
