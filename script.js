@@ -1,7 +1,7 @@
 const START_DATE = new Date("2026-06-15"); 
 
 let items = [
-    { name: "Item A", points: 150, dailyGrowth: 300 },
+    { name: "Item A", points: 150, dailyGrowth: -300 },
     { name: "Item B", points: 340, dailyGrowth: 0 },
     { name: "Item C", points: 20, dailyGrowth: 0 },
     { name: "Item D", points: 85, dailyGrowth: 0 },
