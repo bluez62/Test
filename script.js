@@ -1,4 +1,5 @@
-const START_DATE = new Date("2026-06-16"); 
+let START_DATE = new Date("2026-06-16");
+const dateElement = document.getElementById("dateInput");
 
 let items = [
     { name: "Matthias Rodriguez", points: 85402, dailyGrowth:  32 },
@@ -103,6 +104,10 @@ function renderLeaderboard() {
         `;
         listElement.appendChild(li);
     });
+}
+calculatething() {
+    START_DATE = new Date(dateElement.value);
+    renderLeaderboard();
 }
 
 renderLeaderboard();
