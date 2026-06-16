@@ -105,7 +105,7 @@ function renderLeaderboard() {
         listElement.appendChild(li);
     });
 }
-calculatething() {
+function calculatething() {
     START_DATE = new Date(dateElement.value);
     renderLeaderboard();
 }
