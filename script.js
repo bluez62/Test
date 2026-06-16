@@ -1,6 +1,4 @@
-window.addEventListener("load", () => {
-    let START_DATE = new Date("2026-06-16");
-});
+let START_DATE = new Date("2026-06-16");
 const dateElement = document.getElementById("dateInput");
 
 let items = [
