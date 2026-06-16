@@ -12,7 +12,7 @@ let items = [
     { name: "Isabella Gasca", points: 61789, dailyGrowth: 26 },
     { name: "Jerry Parker", points: 60532, dailyGrowth: 20 },
     { name: "Josiah Parker", points: 59742, dailyGrowth: 25 },
-    { name: "Josiah Lazaneo", points: 59345, dailyGrowth: 257 },
+    { name: "Josiah Lazaneo", points: 59345, dailyGrowth: 25 },
     { name: "Ryan Brandt", points: 57853, dailyGrowth: 18 },
     { name: "Nicholas Rodriguez", points: 56831, dailyGrowth: 20 },
     { name: "Jonah Parker", points: 56732, dailyGrowth: 15 },
