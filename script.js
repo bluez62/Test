@@ -1,4 +1,4 @@
-const START_DATE = new Date("2022-06-15"); 
+const START_DATE = new Date("2026-06-16"); 
 
 let items = [
     { name: "Matthias Rodriguez", points: 85402, dailyGrowth:  32 },
