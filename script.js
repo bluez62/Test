@@ -100,7 +100,7 @@ function renderLeaderboard() {
                 <span class="rank-number">#${rank}</span>
                 <strong>${item.name}</strong>
             </div>
-            <span>${item.points} pts</span>
+            <span>${item.dailyGrowth} Daily Gain - ${item.points} pts</span>
         `;
         listElement.appendChild(li);
     });
