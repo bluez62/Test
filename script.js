@@ -63,7 +63,7 @@ let items = [
     { name: "Josiah Foyd", points: -924, dailyGrowth: -4 },
     { name: "Luke Rodriguez", points: -1906, dailyGrowth: -7 },
     { name: "Sam Perry", points: -3264, dailyGrowth: -25 },
-    { name: "Daniel Voeller", points: -54223, dailyGrowth: -30 }
+    { name: "Daniel Voeller", points: -54223, dailyGrowth: -100 }
 ];
 
 function getDaysPassed() {
