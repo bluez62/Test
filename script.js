@@ -28,7 +28,7 @@ let items = [
     { name: "Elena Vega", points: 34823, dailyGrowth: 4 },
     { name: "Max Miller", points: 9819, dailyGrowth: 1 },
     { name: "Aston Neufeld", points: 9652, dailyGrowth: 2 },
-    { name: "Savi Francisco", points: 10617, dailyGrowth: 14 },
+    { name: "Savi Francisco", points: 10617, dailyGrowth: 2 },
     { name: "Patricia Fraley", points: 8644, dailyGrowth: -1 },
     { name: "Lizzie Anderson", points: 8876, dailyGrowth: 3 },
     { name: "Elizabeth Wade", points: 7974, dailyGrowth: 4 },
