@@ -1,9 +1,9 @@
-let START_DATE = new Date("2026-06-16");
+let START_DATE = new Date("2026-09-22");
 const dateElement = document.getElementById("dateInput");
 
 let items = [
     { name: "Matthias Rodriguez", points: 85402, dailyGrowth:  32 },
-    { name: "Jane Anderson", points: 75727, dailyGrowth: 26 },
+    { name: "Jane Anderson", points: 75727, dailyGrowth: 2 },
     { name: "Jude Parker", points: 74978, dailyGrowth: 29 },
     { name: "Eli Bailey", points: 72327, dailyGrowth: 28 },
     { name: "Noah Cordova", points: 67375, dailyGrowth: 24 },
