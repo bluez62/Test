@@ -6,7 +6,7 @@ let items = [
     { name: "Jane Anderson", points: 80368, dailyGrowth: 2 },
     { name: "Jude Parker", points: 75923, dailyGrowth: 29 },
     { name: "Eli Bailey", points: 75071, dailyGrowth: 28 },
-    { name: "Noah Cordova", points: 69727, dailyGrowth: 24 },
+    { name: "Noah Cordova", points: 69727, dailyGrowth: 17 },
     { name: "LIlianna Pena", points: 68267, dailyGrowth: 27 },
     { name: "Faith Lazaneo", points: 68065, dailyGrowth: 20 },
     { name: "Jorge Gasca", points: 64385, dailyGrowth: 13 },
