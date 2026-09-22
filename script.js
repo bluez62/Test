@@ -3,7 +3,7 @@ const dateElement = document.getElementById("dateInput");
 
 let items = [
     { name: "Matthias Rodriguez", points: 88538, dailyGrowth:  32 },
-    { name: "Jane Anderson", points: 77820, dailyGrowth: 2 },
+    { name: "Jane Anderson", points: 80368, dailyGrowth: 2 },
     { name: "Jude Parker", points: 75923, dailyGrowth: 29 },
     { name: "Eli Bailey", points: 75071, dailyGrowth: 28 },
     { name: "Noah Cordova", points: 69727, dailyGrowth: 24 },
