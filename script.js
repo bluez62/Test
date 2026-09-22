@@ -10,7 +10,7 @@ let items = [
     { name: "LIlianna Pena", points: 68267, dailyGrowth: 29 },
     { name: "Faith Lazaneo", points: 68065, dailyGrowth: 28 },
     { name: "Jorge Gasca", points: 64385, dailyGrowth: 20 },
-    { name: "Isabella Gasca", points: 64337, dailyGrowth: 26 },
+    { name: "Isabella Gasca", points: 64337, dailyGrowth: 15 },
     { name: "Jerry Parker", points: 62492, dailyGrowth: 23 },
     { name: "Josiah Parker", points: 62192, dailyGrowth: 20 },
     { name: "Josiah Lazaneo", points: 61795, dailyGrowth: 15 },
