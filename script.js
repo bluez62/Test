@@ -19,7 +19,7 @@ let items = [
     { name: "Jonah Parker", points: 58202, dailyGrowth: 20 },
     { name: "Maddy", points: 55037, dailyGrowth: 10 },
     { name: "Sofy Russell", points: 53698, dailyGrowth: 22 },
-    { name: "Judah Anderson", points: 51715, dailyGrowth: 20 },
+    { name: "Judah Anderson", points: 51715, dailyGrowth: 5 },
     { name: "Alyssa Chaparro", points: 47696, dailyGrowth: 13 },
     { name: "Evalyn Allardyce", points: 45029, dailyGrowth: 14 },
     { name: "Nico Chaparro", points: 39904, dailyGrowth: 14 },
