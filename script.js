@@ -16,7 +16,7 @@ let items = [
     { name: "Josiah Lazaneo", points: 61795, dailyGrowth: 25 },
     { name: "Ryan Brandt", points: 59617, dailyGrowth: 18 },
     { name: "Nicholas Rodriguez", points: 58791, dailyGrowth: 20 },
-    { name: "Jonah Parker", points: 58202, dailyGrowth: 15 },
+    { name: "Jonah Parker", points: 58202, dailyGrowth: 20 },
     { name: "Maddy", points: 55037, dailyGrowth: 24 },
     { name: "Sofy Russell", points: 53698, dailyGrowth: 22 },
     { name: "Judah Anderson", points: 51715, dailyGrowth: 20 },
